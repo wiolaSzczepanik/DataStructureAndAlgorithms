@@ -19,7 +19,7 @@ public class MyLinkedList {
         String result = "";
         Node newNode = head;
         while(newNode != null){
-            result = result + (newNode.data+" ");
+            result = String.format("%s%s", result, newNode.data + " ");
             newNode = newNode.next;
         }
         return result;
@@ -29,4 +29,18 @@ public class MyLinkedList {
     public String toString() {
         return "" + head + "";
     }
-}
+
+    public void delete(int number) {
+        if(head == null) return;
+
+        Node newNode = head;
+        while(newNode.next != null){
+            if(newNode.next.data == number){
+                newNode.next= newNode.next.next;
+                return;
+            }else
+                newNode =newNode.next;
+            }
+        }
+    }
+

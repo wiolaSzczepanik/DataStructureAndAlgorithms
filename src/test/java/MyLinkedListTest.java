@@ -33,4 +33,17 @@ class MyLinkedListTest {
         assertEquals("10 20 ", linkedList.printList());
     }
 
+    @Test
+    public void testDeleteMethod(){
+        MyLinkedList linkedList = new MyLinkedList();
+        linkedList.append(10);
+        linkedList.append(20);
+        linkedList.append(30);
+        linkedList.append(40);
+        linkedList.delete(30);
+        assertEquals("10 20 40 ", linkedList.printList());
+
+    }
+
 }
+
