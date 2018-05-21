@@ -1,0 +1,11 @@
+.idea
+.xml
+.iml
+pom.xml
+
+.idea/compiler.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+MyLinkedList.iml
+pom.xml
