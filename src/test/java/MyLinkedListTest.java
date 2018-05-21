@@ -25,4 +25,12 @@ class MyLinkedListTest {
         assertEquals(10, number.data);
     }
 
+    @Test
+    public void testAppendTwoElements(){
+        MyLinkedList linkedList = new MyLinkedList();
+        linkedList.append(10);
+        linkedList.append(20);
+        assertEquals("10 20 ", linkedList.printList());
+    }
+
 }
