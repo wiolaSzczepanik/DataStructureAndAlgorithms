@@ -12,4 +12,10 @@ class MyLinkedListTest {
         Node node = new Node(10);
         assertEquals(10, node.data);
     }
+    @Test
+    public void testIfFirstHeadIsNull(){
+        MyLinkedList linkedList = new MyLinkedList();
+        assertEquals(null, linkedList.head);
+    }
+
 }
