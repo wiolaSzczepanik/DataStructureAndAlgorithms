@@ -17,5 +17,12 @@ class MyLinkedListTest {
         MyLinkedList linkedList = new MyLinkedList();
         assertEquals(null, linkedList.head);
     }
+    @Test
+    public void testAppendOneElement(){
+        MyLinkedList linkedList = new MyLinkedList();
+        linkedList.append(10);
+        Node number = linkedList.head;
+        assertEquals(10, number.data);
+    }
 
 }
