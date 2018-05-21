@@ -8,7 +8,7 @@ class MyLinkedListTest {
     public void testIfNodeExist(){ new Node();}
 
     @Test
-    public void testNode(){
+    public void testNodeWithDataEqual10(){
         Node node = new Node(10);
         assertEquals(10, node.data);
     }
@@ -34,7 +34,7 @@ class MyLinkedListTest {
     }
 
     @Test
-    public void testDeleteMethod(){
+    public void testDeleteOneElement(){
         MyLinkedList linkedList = new MyLinkedList();
         linkedList.append(10);
         linkedList.append(20);
