@@ -6,4 +6,10 @@ class MyLinkedListTest {
 
     @Test
     public void testIfNodeExist(){ new Node();}
+
+    @Test
+    public void testNode(){
+        Node node = new Node(10);
+        assertEquals(10, node.data);
+    }
 }
